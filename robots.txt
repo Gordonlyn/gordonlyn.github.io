@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gordonlyn.github.io/sitemap.xml

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google 搜索结果里显示的标题和描述 -->
+  <title>Gordon Liu 个人网站 — 开发者 · 投资者</title>
+  <meta name="description" content="Yinan Gordon Liu 的个人官网：用 Python 打造投资与金融工具的学生开发者。个人成就、项目、经历与联系方式。">
+
+  <!-- 告诉 Google 中英文两个页面互为翻译。买了自己的域名后，把 https://gordonlyn.github.io 换成新域名。 -->
+  <link rel="canonical" href="https://gordonlyn.github.io/zh/">
+  <link rel="alternate" hreflang="en" href="https://gordonlyn.github.io/">
+  <link rel="alternate" hreflang="zh" href="https://gordonlyn.github.io/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://gordonlyn.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gordon Liu — 开发者 · 投资者">
+  <meta property="og:description" content="用 Python 打造投资与金融工具的学生开发者。">
+  <meta property="og:url" content="https://gordonlyn.github.io/zh/">
+
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yinan Gordon Liu",
+    "alternateName": "Gordon Liu",
+    "url": "https://gordonlyn.github.io/zh/",
+    "sameAs": ["https://github.com/Gordonlyn"],
+    "knowsAbout": ["Python", "投资", "金融", "数据分析"]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="主导航">
+      <a class="brand" href="#top"><span class="brand-mark">GL</span>Gordon Liu</a>
+
+      <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false" aria-controls="nav-links">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#achievements">个人成就</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#experience">经历</a></li>
+        <li><a href="#contact">联系</a></li>
+        <li><a class="lang-switch" href="../" hreflang="en" lang="en">English</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== 首屏 ===== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">学生 · 开发者 · 投资者</span>
+          <h1>用<span class="hl">代码</span>，<br>读懂<span class="hl">资本</span>市场。</h1>
+          <p class="hero-lead">
+            我是 Yinan Gordon Liu。我用 Python 研究市场——从基于真实股票数据的交易模拟器，到投资分析网站。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">查看作品</a>
+            <a class="btn btn-ghost" href="#contact">联系我</a>
+          </div>
+        </div>
+
+        <!-- 真实的苹果 (AAPL) 收盘价，2025 年 7 月 – 2026 年 7 月，来自交易模拟器用的 AppleStock_1_year.csv -->
+        <figure class="market-card" aria-label="苹果股票一年价格走势图">
+          <header>
+            <span class="ticker">AAPL <small>1年</small></span>
+            <span class="change">▲ 51.0%</span>
+          </header>
+          <div class="price">$321.66</div>
+          <svg viewBox="0 0 400 160" role="img" aria-hidden="true">
+            <defs>
+              <linearGradient id="fill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#3ccf91" stop-opacity=".35"/>
+                <stop offset="100%" stop-color="#3ccf91" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <polygon fill="url(#fill)" points="0,160 0.0,139.9 4.8,145.5 9.5,152.0 14.3,132.9 19.0,121.5 23.8,119.3 28.6,125.7 33.3,124.4 38.1,118.2 42.9,111.4 47.6,112.1 52.4,121.1 57.1,111.7 61.9,103.3 66.7,95.5 71.4,93.0 76.2,89.9 81.0,90.7 85.7,103.6 90.5,98.9 95.2,84.1 100.0,87.1 104.8,76.3 109.5,74.7 114.3,75.0 119.0,75.5 123.8,71.4 128.6,77.8 133.3,73.1 138.1,66.2 142.9,56.2 147.6,64.7 152.4,64.7 157.1,70.1 161.9,72.3 166.7,72.1 171.4,70.5 176.2,73.7 181.0,86.0 185.7,86.1 190.5,88.4 195.2,100.6 200.0,91.6 204.8,88.3 209.5,75.4 214.3,65.5 219.0,68.2 223.8,81.6 228.6,80.8 233.3,69.7 238.1,80.6 242.9,85.7 247.6,85.1 252.4,97.4 257.1,97.6 261.9,95.9 266.7,94.3 271.4,93.2 276.2,87.4 281.0,85.5 285.7,87.4 290.5,74.3 295.2,70.9 300.0,77.3 304.8,73.0 309.5,58.2 314.3,47.7 319.0,41.0 323.8,42.2 328.6,33.9 333.3,27.2 338.1,32.4 342.9,26.7 347.6,50.6 352.4,49.9 357.1,44.4 361.9,46.3 366.7,58.4 371.4,46.2 376.2,27.4 381.0,22.0 385.7,8.0 390.5,9.0 395.2,14.7 400.0,14.7 400,160"/>
+            <polyline fill="none" stroke="#3ccf91" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" points="0.0,139.9 4.8,145.5 9.5,152.0 14.3,132.9 19.0,121.5 23.8,119.3 28.6,125.7 33.3,124.4 38.1,118.2 42.9,111.4 47.6,112.1 52.4,121.1 57.1,111.7 61.9,103.3 66.7,95.5 71.4,93.0 76.2,89.9 81.0,90.7 85.7,103.6 90.5,98.9 95.2,84.1 100.0,87.1 104.8,76.3 109.5,74.7 114.3,75.0 119.0,75.5 123.8,71.4 128.6,77.8 133.3,73.1 138.1,66.2 142.9,56.2 147.6,64.7 152.4,64.7 157.1,70.1 161.9,72.3 166.7,72.1 171.4,70.5 176.2,73.7 181.0,86.0 185.7,86.1 190.5,88.4 195.2,100.6 200.0,91.6 204.8,88.3 209.5,75.4 214.3,65.5 219.0,68.2 223.8,81.6 228.6,80.8 233.3,69.7 238.1,80.6 242.9,85.7 247.6,85.1 252.4,97.4 257.1,97.6 261.9,95.9 266.7,94.3 271.4,93.2 276.2,87.4 281.0,85.5 285.7,87.4 290.5,74.3 295.2,70.9 300.0,77.3 304.8,73.0 309.5,58.2 314.3,47.7 319.0,41.0 323.8,42.2 328.6,33.9 333.3,27.2 338.1,32.4 342.9,26.7 347.6,50.6 352.4,49.9 357.1,44.4 361.9,46.3 366.7,58.4 371.4,46.2 376.2,27.4 381.0,22.0 385.7,8.0 390.5,9.0 395.2,14.7 400.0,14.7"/>
+          </svg>
+          <figcaption class="market-meta">
+            <span>2025.07</span><span>数据来自我的交易模拟器</span><span>2026.07</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== 关于我 ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">关于我</span>
+          <h2>你好，我是 Gordon。</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <!-- 修改：写 2–3 段关于你自己的介绍 -->
+            <p>
+              我是一名热爱编程与金融交叉领域的学生开发者。我的学习方式是动手做：
+              每学到一个计算机科学概念，我都会把它变成一个真正能用来分析市场的工具。
+            </p>
+            <p>
+              目前我正在用 Python、Streamlit 和 Excel 搭建一个投资网站，
+              同时提升自己在面向对象设计和数据分析方面的能力。
+            </p>
+            <p>[在这里写一句你的目标、兴趣或动力。]</p>
+          </div>
+
+          <!-- 修改：替换 [方括号] 里的内容 -->
+          <dl class="facts">
+            <div><dt>所在地</dt><dd>[城市，国家]</dd></div>
+            <div><dt>教育</dt><dd>[学校名称]</dd></div>
+            <div><dt>方向</dt><dd>Python · 金融 · 数据</dd></div>
+            <div><dt>语言</dt><dd>English · 中文</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 个人成就 ===== -->
+    <section class="section alt" id="achievements">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">个人成就</span>
+          <h2>荣誉与里程碑</h2>
+          <p>比赛、奖项与证书中的亮点。</p>
+        </div>
+
+        <!-- 修改：每个成就一个 <article class="card">，复制一块即可新增 -->
+        <div class="cards">
+          <article class="card">
+            <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0V4zM17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></div>
+            <span class="badge">[年份]</span>
+            <h3>[奖项名称]</h3>
+            <p>[颁发机构] — [一句话说明你做了什么、为什么重要。]</p>
+          </article>
+
+          <article class="card">
+            <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg></div>
+            <span class="badge">[年份]</span>
+            <h3>[比赛成绩]</h3>
+            <p>[比赛名称] — [你的名次和比赛内容。]</p>
+          </article>
+
+          <article class="card">
+            <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H4zM8 20h8M12 16v4"/><path d="m9 10 2 2 4-4"/></svg></div>
+            <span class="badge">[年份]</span>
+            <h3>[证书 / 课程]</h3>
+            <p>[颁发机构] — [你学到了什么。]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 项目 ===== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">项目</span>
+          <h2>我正在做的事</h2>
+          <p>编程与投资交叉领域的软件项目。</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <span class="badge live">已完成</span>
+            <h3>苹果股票交易模拟器</h3>
+            <p>
+              基于一年真实 AAPL 股价的逐日交易游戏。用 yfinance 抓取数据，
+              清理不完整的交易日，并通过 Portfolio 类追踪现金和持股。
+            </p>
+            <ul class="tags"><li>Python</li><li>yfinance</li><li>面向对象</li><li>CSV</li></ul>
+            <a class="card-link" href="https://github.com/Gordonlyn/LGYNN">在 GitHub 查看 →</a>
+          </article>
+
+          <article class="card">
+            <span class="badge">进行中</span>
+            <h3>投资分析网站</h3>
+            <p>
+              一个可交互的投资分析网页应用，用 Excel 管理数据，在浏览器中可视化展示。
+            </p>
+            <ul class="tags"><li>Python</li><li>Streamlit</li><li>Excel</li></ul>
+            <span class="card-link">即将上线</span>
+          </article>
+
+          <article class="card">
+            <span class="badge live">已上线</span>
+            <h3>本网站</h3>
+            <p>
+              中英双语个人网站，用 HTML 和 CSS 手写，托管在 GitHub Pages 上。
+            </p>
+            <ul class="tags"><li>HTML</li><li>CSS</li><li>SEO</li></ul>
+            <a class="card-link" href="https://github.com/Gordonlyn/gordonlyn.github.io">查看源代码 →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 经历与教育 ===== -->
+    <section class="section alt" id="experience">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">经历</span>
+          <h2>经历与教育</h2>
+        </div>
+
+        <!-- 修改：最新的放最上面，复制 <li> 即可新增 -->
+        <ol class="timeline">
+          <li>
+            <span class="when">[2025 – 至今]</span>
+            <h3>[职位或项目]</h3>
+            <p>[机构] — [一两句话描述你做了什么。]</p>
+          </li>
+          <li>
+            <span class="when">[年份 – 年份]</span>
+            <h3>[学校名称]</h3>
+            <p>[学位 / 文凭、主修科目或荣誉。]</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== 联系 ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="cta">
+          <div>
+            <h2>保持联系。</h2>
+            <p>欢迎合作、实习机会，以及关于科技与投资的交流。</p>
+          </div>
+          <div class="hero-actions">
+            <!-- 修改：填上你公开的邮箱 -->
+            <a class="btn btn-primary" href="mailto:[your-email@example.com]">发邮件</a>
+            <a class="btn btn-ghost" href="https://github.com/Gordonlyn">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>© <span id="year">2026</span> Yinan Gordon Liu. 保留所有权利。</span>
+      <div class="footer-links">
+        <a href="https://github.com/Gordonlyn">GitHub</a>
+        <a href="../" hreflang="en" lang="en">English</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>

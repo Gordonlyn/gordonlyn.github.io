@@ -433,3 +433,61 @@ a:hover { text-decoration: underline; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* ---------- Key figures card (hero) ---------- */
+
+.stats-card {
+  background: rgba(255, 255, 255, .06);
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 18px;
+  padding: 8px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, .25);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+}
+
+.stat { padding: 24px; }
+.stat:nth-child(odd) { border-right: 1px solid rgba(255, 255, 255, .12); }
+.stat:nth-child(-n+2) { border-bottom: 1px solid rgba(255, 255, 255, .12); }
+
+.stat strong {
+  display: block;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  color: var(--mint);
+}
+.stat span { font-size: 14px; color: rgba(255, 255, 255, .72); }
+
+/* Two-column card grid (achievements, projects) */
+.cards.two { grid-template-columns: repeat(2, 1fr); }
+
+.card .meta { font-size: 14px; font-weight: 600; color: var(--green); margin: -4px 0 10px; }
+
+/* Experience + education side by side */
+.split {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 64px;
+}
+.split h3.col-title {
+  font-size: 14px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 28px;
+}
+
+.timeline ul { margin: 8px 0 0; padding-left: 18px; color: var(--muted); font-size: 15.5px; }
+.timeline ul li { padding: 0 0 4px; }
+.timeline ul li::before { content: none; }
+
+@media (max-width: 900px) {
+  .split { grid-template-columns: 1fr; gap: 56px; }
+}
+@media (max-width: 760px) {
+  .cards.two { grid-template-columns: 1fr; }
+  .stat { padding: 18px; }
+  .stat strong { font-size: 32px; }
+}
